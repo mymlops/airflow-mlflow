@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  classifier:
+    image: toxic-comment-classifier:latest
+    ports: 
+      - 5001:3000
+    volumes:
+      - /usr/local/share/nltk_data:/usr/local/share/nltk_data

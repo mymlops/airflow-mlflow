@@ -1,0 +1,6 @@
+service: service:svc
+include:
+  - service.py
+python:
+  requirements_txt: $BENTOML_MLFLOW_MODEL_PATH/requirements.txt
+  lock_packages: False
